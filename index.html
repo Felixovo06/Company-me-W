@@ -36,10 +36,24 @@
             color: #666;
             line-height: 1.6;
         }
-        img{
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gallery img {
             width: 270px;
             height: 270px;
-            margin-top: 28px;
+            margin: 10px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         footer {
             text-align: center;
@@ -57,14 +71,14 @@
     <header>
         <h1>磊酱的恋爱日记OvO</h1>
     </header>
-        <article>
+    <article>
         <h2>敬请期待</h2>
         <p><em>xxxx</em></p>
         <p>噜噜噜</p>
     </article>
     <article>
         <h2>小开心x2</h2>
-        <p><em>10.17</em></p>
+        <p><em>2024.10.17</em></p>
         <p>今天中午陪宝宝去买咖啡，宝宝给我拍出了超有氛围感的照片。
             晚上宝宝没有竞选成功 但是在我眼里宝宝很棒 不差这个小职务嘻嘻
         明天又可以一起上课啦</p>
@@ -75,10 +89,16 @@
         <p>今天宝宝发现我抖音没有看她昨天发的消息！！！可我不是故意的呜呜呜，但是宝宝最后没生气，好懂事！！还以为要吵架，不想和宝宝吵架，宝宝天下第一好OvO.</p>
     </article>
 
-    <p><img src="https://picture.gptkong.com/20241016/2258c6253937ff4798a138738695719b31.jpg"></p>
+    <!-- 照片画廊区域 -->
+    <div class="gallery">
+        <img src="https://picture.gptkong.com/20241016/2258c6253937ff4798a138738695719b31.jpg" alt="照片1">
+        <!-- 在此处添加更多照片 -->
+        <img src="https://picture.gptkong.com/20241017/2244df413c56e948a89759aaf3acf9a651.jpg" alt="照片2">
+    </div>
 
     <footer>
         <p>版权所有 &copy; 2024 恋爱日记</p>
     </footer>
 </body>
 </html>
+
