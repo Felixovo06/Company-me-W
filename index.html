@@ -1,101 +1,45 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>磊酱的恋爱日记OvO</title>
-        <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #e08cc4af;
-            margin: 0;
-            padding: 0;
-            transition: background-color 0.5s;
-        }
-        header {
-            background-color: #d461aebe;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-           font-size: 3em;
-           background: linear-gradient(to right, #ff69b4, #ff1493, #ff69b4);
-           -webkit-background-clip: text;
-           color: transparent;
-           text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-           font-family: 'Cursive', sans-serif;
-           letter-spacing: 3px;
-           margin: 0;
-}
-        article {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        article:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        h2 {
-            color: #000;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .gallery img {
-            width: 270px;
-            height: 270px;
-            margin: 10px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-       
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你是烦人精</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ff00ff, #0000ff, #00ffff, #ffff00);
+      background-size: 400% 400%;
+      animation: bgAnimation 10s infinite;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 10vw;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #ffff00;
+      animation: textGlow 2s infinite alternate;
+    }
+
+    @keyframes bgAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes textGlow {
+      0% { text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #00ffff, 0 0 50px #00ffff; }
+      100% { text-shadow: 0 0 30px #ffff00, 0 0 40px #ff00ff, 0 0 50px #00ffff, 0 0 60px #00ffff; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>磊酱的恋爱日记OvO</h1>
-    </header>
-    <article>
-        <h2>敬请期待</h2>
-        <p><em>xxxx</em></p>
-        <p>噜噜噜</p>
-    </article>
-    <article>
-        <h2>小开心x2</h2>
-        <p><em>2024.10.17</em></p>
-        <p>今天中午陪宝宝去买咖啡，宝宝给我拍出了超有氛围感的照片。
-            晚上宝宝没有竞选成功 但是在我眼里宝宝很棒 不差这个小职务嘻嘻
-        明天又可以一起上课啦</p>
-    </article>
-    <article>
-        <h2>小开心</h2>
-        <p><em>2024.10.16</em></p>
-        <p>今天宝宝发现我抖音没有看她昨天发的消息！！！可我不是故意的呜呜呜，但是宝宝最后没生气，好懂事！！还以为要吵架，不想和宝宝吵架，宝宝天下第一好OvO.</p>
-    </article>
-
-    <!-- 照片画廊区域 -->
-    <div class="gallery">
-        <img src="https://picture.gptkong.com/20241016/2258c6253937ff4798a138738695719b31.jpg" alt="照片1">
-        <!-- 在此处添加更多照片 -->
-        <img src="https://picture.gptkong.com/20241017/2244df413c56e948a89759aaf3acf9a651.jpg" alt="照片2">
-    </div>
+  <h1>你是烦人精</h1>
 </body>
 </html>
-
-
